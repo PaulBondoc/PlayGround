@@ -23,7 +23,7 @@ const Resources = ({ categoryId, categoryChange }) => {
       // If no categoryId, show all resources
       setFilteredResources(resourcesList);
     }
-  }, [categoryId]);
+  }, [categoryId, savedFavorites]);
 
   return (
     <section className="min-h-[500px] my-[1rem] xs:my-[2rem]">

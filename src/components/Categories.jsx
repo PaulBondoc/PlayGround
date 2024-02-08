@@ -10,7 +10,7 @@ const Categories = ({ onCategoryClick }) => {
   useEffect(() => {
     const storedFavorites = JSON.parse(localStorage.getItem("favorites") || []);
     setFavorites(storedFavorites);
-  }, []);
+  }, [favorites]);
 
   const handleCategoryClick = (categoryName, categoryId) => {
     setActiveCategory(categoryName);
