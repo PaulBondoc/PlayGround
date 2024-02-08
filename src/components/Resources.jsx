@@ -3,7 +3,10 @@ import { resourcesList } from "../constant/ResourcesData";
 import { useState, useEffect } from "react";
 
 const Resources = ({ categoryId, categoryChange }) => {
-  const savedFavorites = JSON.parse(localStorage.getItem("favorites") || []);
+  const savedFavoritesJSON = localStorage.getItem("favorites");
+  const savedFavorites = savedFavoritesJSON
+    ? JSON.parse(savedFavoritesJSON)
+    : [];
   const [filteredResources, setFilteredResources] = useState([]);
 
   useEffect(() => {

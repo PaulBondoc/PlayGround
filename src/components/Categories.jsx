@@ -8,7 +8,11 @@ const Categories = ({ onCategoryClick }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   useEffect(() => {
-    const storedFavorites = JSON.parse(localStorage.getItem("favorites") || []);
+    const storedFavoritesJSON = localStorage.getItem("favorites");
+    const storedFavorites = storedFavoritesJSON
+      ? JSON.parse(storedFavoritesJSON)
+      : [];
+
     setFavorites(storedFavorites);
   }, [favorites]);
 

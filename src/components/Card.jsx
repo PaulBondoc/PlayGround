@@ -9,8 +9,11 @@ const Card = (props) => {
 
   useEffect(() => {
     // Check if the resource is already saved as a favorite in local storage
-    const savedFavorites = JSON.parse(localStorage.getItem("favorites")) || [];
-    setIsFavorite(savedFavorites.includes(props.name));
+    const savedFavoritesJSON = localStorage.getItem("favorites");
+    if (savedFavoritesJSON) {
+      const savedFavorites = JSON.parse(savedFavoritesJSON);
+      setIsFavorite(savedFavorites.includes(props.name));
+    }
   }, [props.name]);
 
   const handleFavorite = () => {
