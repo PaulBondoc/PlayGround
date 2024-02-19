@@ -182,7 +182,7 @@ export const resourcesList = [
   },
   {
     name: "CSS Buttons",
-    id: 4,
+    id: 2,
     url: "https://cssbuttons.app/",
     description:
       "library that lets you create and customize particles, confetti and fireworks animations for your website.",
