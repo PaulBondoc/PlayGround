@@ -28,6 +28,10 @@ export const categoryList = [
     name: "JS Libraries",
   },
   {
+    id: 8,
+    name: "Images",
+  },
+  {
     id: 7,
     name: "Favorites",
   },

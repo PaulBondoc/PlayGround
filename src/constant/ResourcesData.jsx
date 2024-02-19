@@ -28,6 +28,10 @@ import Googlefonts from "../assets/logos/googlefonts.png";
 import ScrollReveal from "../assets/logos/scrollreveal.png";
 import Webflow from "../assets/logos/webflow.png";
 
+import Pixcap from "../assets/logos/pixcap.png";
+import Freepik from "../assets/logos/freepik.png";
+import CSSHero from "../assets/logos/csshero.png";
+
 export const resourcesList = [
   {
     name: "UIVerse",
@@ -268,5 +272,29 @@ export const resourcesList = [
     description:
       "Experience the power of HTML, CSS, and JavaScript in a 100% visual canvas.",
     logo: Webflow,
+  },
+  {
+    name: "Pixcap",
+    id: 8,
+    url: "https://pixcap.com/explore",
+    description:
+      "A Free online platform that lets you create 3D graphics with drag-and-drop simplicity.",
+    logo: Pixcap,
+  },
+  {
+    name: "Freepik",
+    id: 8,
+    url: "https://www.bing.com/ck/a?!&&p=47d5515711aaed59JmltdHM9MTcwODIxNDQwMCZpZ3VpZD0zOWU0NGU0OC0xMGM0LTZmODYtM2VmNy01ZDMwMTFkMDZlYjEmaW5zaWQ9NTE5Ng&ptn=3&ver=2&hsh=3&fclid=39e44e48-10c4-6f86-3ef7-5d3011d06eb1&psq=freepik&u=a1aHR0cHM6Ly93d3cuZnJlZXBpay5jb20v&ntb=1",
+    description:
+      "Access a vast collection of high-quality graphics, vectors, and photos for creative projects.",
+    logo: Freepik,
+  },
+  {
+    name: "Mesher",
+    id: 3,
+    url: " https://csshero.org/mesher/",
+    description:
+      "A Free tool to create beautiful mesh gradients only withCSS code.",
+    logo: CSSHero,
   },
 ];
